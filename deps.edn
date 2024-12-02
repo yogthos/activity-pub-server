@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps  {org.clojure/clojure {:mvn/version "1.11.1"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps  {lambdaisland/kaocha {:mvn/version "1.75.1190"}}
+         :main-opts   ["-m" "kaocha.runner"]}}}
